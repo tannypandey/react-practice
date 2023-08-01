@@ -9,6 +9,10 @@ import CountVertigo from "./images/8.jpeg";
 import Robin from "./images/9.jpeg";
 import Nightwing from "./images/10.jpeg";
 import { BrowserRouter } from 'react-router-dom';
+import React from 'react';
+import App from "./App";
+
+
 
 const images = {
       Batman,
@@ -23,3 +27,12 @@ const images = {
       Nightwing
 }
 export default images;
+
+
+root.render(
+  <React.StrictMode>
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>  
+  </React.StrictMode>
+)

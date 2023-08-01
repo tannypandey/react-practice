@@ -15,13 +15,15 @@ function App() {
                                           <Nav className="me-auto">
                                           <Nav.Link href="/allheroes">All Heroes</Nav.Link>
                                           <Nav.Link href="/addhero">Add Hero</Nav.Link>
-                                          </Nav></Navbar.Collapse></Container>      </Navbar>
-                                                                                                                                    
+                                          </Nav></Navbar.Collapse></Container></Navbar>
+
                                           <Routes>
-                                            <Route path="/allheroes" element={<AllHeroes/>} />  
-                                            <Route path="/addhero" element={<HeroForm/>} />
-                                            <Route path="/" element={<AllHeroes/>} />
-                                        </Routes>      </>
+                                              <Route path="/allheroes" element={AllHeroes} />
+                                              <Route path="/addhero" element={HeroForm} />
+                                              <Route path="/" element={AllHeroes} />
+                                          </Routes>
+                                          
+      </>
             );
                                                                                                                                                                                           
 }
